@@ -1,0 +1,31 @@
+{
+  "name": "line-message-builder",
+  "version": "1.0.0",
+  "description": "This package is message builder for LINE Messaging API.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ufoo68/line-message-builder.git"
+  },
+  "keywords": [
+    "line",
+    "messaging-api"
+  ],
+  "author": "ufoo68 <mitarou.yuutarou@gmail.com> (https://qiita.com/ufoo68)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ufoo68/line-message-builder/issues"
+  },
+  "homepage": "https://github.com/ufoo68/line-message-builder#readme",
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "typescript": "^3.6.3"
+  }
+}
