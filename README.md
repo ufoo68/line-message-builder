@@ -1,4 +1,5 @@
 # line-message-builder
+[![Build Status](https://travis-ci.org/ufoo68/line-message-builder.svg?branch=master)](https://travis-ci.org/ufoo68/line-message-builder)  
 A Node.js module that returns ReplyMessage for [LINE Bot SDK](https://github.com/line/line-bot-sdk-nodejs)
 
 ## Installation 
