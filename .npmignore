@@ -1,4 +1,3 @@
-tsconfig.json
-package-lock.json
-./node_modules
 ./lib
+./test
+tsconfig.json

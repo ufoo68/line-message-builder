@@ -25,4 +25,3 @@ function buildReplyRandomText(texts) {
     return buildReplyText(texts[Math.floor(Math.random() * texts.length)]);
 }
 exports.buildReplyRandomText = buildReplyRandomText;
-//# sourceMappingURL=index.js.map
