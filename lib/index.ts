@@ -11,6 +11,8 @@ export default interface ReplyMessage {
 * @Param {string | string[]}
 * @Return {ReplyMessage | ReplyMessage[]}
 */
+export function buildReplyText(text: string): ReplyMessage;
+export function buildReplyText(text: string[]): ReplyMessage[];
 export function buildReplyText(text: string | string[]) : ReplyMessage | ReplyMessage[] {
     return Array.isArray(text) ? text.map(t => 
     (
