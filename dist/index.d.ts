@@ -1,16 +1,14 @@
-export default interface ReplyMessage {
-    type: string;
-    text: string;
-}
+import { Message } from '@line/bot-sdk';
 /**
 * @Method: Return message object or Array[object].
 * @Param {string | string[]}
-* @Return {ReplyMessage | ReplyMessage[]}
+* @Return {Message | Message[]}
 */
-export declare function buildReplyText(text: string | string[]): ReplyMessage | ReplyMessage[];
+export declare function buildReplyText(text: string): Message;
+export declare function buildReplyText(text: string[]): Message[];
 /**
 * @Method: Returns random message into string[].
 * @Param {string[]}
-* @Return {ReplyMessage}
+* @Return {Message}
 */
-export declare function buildReplyRandomText(texts: string[]): ReplyMessage;
+export declare function buildReplyRandomText(texts: string[]): Message;

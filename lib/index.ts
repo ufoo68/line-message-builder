@@ -5,7 +5,7 @@ import { Message } from '@line/bot-sdk'
 /**
 * @Method: Return message object or Array[object].
 * @Param {string | string[]}
-* @Return {ReplyMessage | ReplyMessage[]}
+* @Return {Message | Message[]}
 */
 export function buildReplyText(text: string): Message;
 export function buildReplyText(text: string[]): Message[];
@@ -26,7 +26,7 @@ export function buildReplyText(text: string | string[]) : Message | Message[] {
 /**
 * @Method: Returns random message into string[].
 * @Param {string[]}
-* @Return {ReplyMessage}
+* @Return {Message}
 */
 export function buildReplyRandomText(texts: string[]) : Message {
     return buildReplyText(texts[ Math.floor( Math.random() * texts.length )]) as Message

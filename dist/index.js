@@ -1,10 +1,6 @@
+// Message builder for LINE Messaging API
 'use strict';
 Object.defineProperty(exports, "__esModule", { value: true });
-/**
-* @Method: Return message object or Array[object].
-* @Param {string | string[]}
-* @Return {ReplyMessage | ReplyMessage[]}
-*/
 function buildReplyText(text) {
     return Array.isArray(text) ? text.map(t => ({
         type: 'text',
@@ -19,7 +15,7 @@ exports.buildReplyText = buildReplyText;
 /**
 * @Method: Returns random message into string[].
 * @Param {string[]}
-* @Return {ReplyMessage}
+* @Return {Message}
 */
 function buildReplyRandomText(texts) {
     return buildReplyText(texts[Math.floor(Math.random() * texts.length)]);
