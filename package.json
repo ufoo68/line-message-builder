@@ -29,6 +29,6 @@
     "typescript": "3.8.3"
   },
   "dependencies": {
-    "@line/bot-sdk": "^6.8.2"
+    "@line/bot-sdk": "^7.0.0"
   }
 }
